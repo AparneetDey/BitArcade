@@ -1,0 +1,36 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+}
+body{
+  margin: 0;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  background-color: #fadfc4;
+}
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari and Opera */
+}
+button{
+  user-select: none;
+  font-size: 18px;
+  border: 3.5px solid;
+  border-radius: 12px;
+  cursor: pointer;
+  font-family: "Pixelify Sans", sans-serif;
+}
+.trend,.game-header{
+  font-family: "IBM Plex Mono", monospace;
+  margin-bottom: 1.5%;
+  font-size: 30px;
+  font-weight: 600;
+  color: #392F5A;
+}
+.header,.description,.tag-slider,.trend-section,.game-section,.footer{
+  margin: 0 7%;
+}

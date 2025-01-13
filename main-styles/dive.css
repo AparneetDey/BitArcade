@@ -1,0 +1,26 @@
+.dive-section{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4D06F;
+  height: 600px;
+  margin-bottom: 10%;
+}
+.top{
+  font-family: "Pixelify Sans", sans-serif;
+  text-align: center;
+  line-height: 70px;
+  font-size: 70px;
+  font-weight: 500;
+  width: 550px;
+  margin-bottom: 50px;
+}
+.bottom{
+  text-align: center;
+  font-size: 19px;
+  line-height: 28px;
+  font-weight: 500;
+  width: 550px;
+  margin-bottom: 25px;
+}

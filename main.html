@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>BitArcade - Explore Indie & Pixel Games</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pixelify+Sans:wght@400..700&display=swap" rel="stylesheet"> <!--Pixelify-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><!--IBM(Headings)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet"><!--Jakarta(desc)-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"><!--FontAwesome-->
+    <link rel="stylesheet" href="main-styles/main.css"> 
+    <link rel="stylesheet" href="main-styles/header.css">
+    <link rel="stylesheet" href="main-styles/description.css">
+    <link rel="stylesheet" href="main-styles/categories.css">
+    <link rel="stylesheet" href="main-styles/trending.css">
+    <link rel="stylesheet" href="main-styles/games.css">
+    <link rel="stylesheet" href="main-styles/footer.css">
+    <link rel="stylesheet" href="main-styles/dive.css">
+    <link rel="stylesheet" href="main-styles/loginpop.css">
+  </head>
+  <body>
+    <div class="backdrop" style="display: none;"></div>  <!--Backdrop-->
+    <div class="header">
+      <div class="left-head">
+        <a href="main.html" class="head-title"><span class="bit">Bit</span><span class="arcade">Arcade</span></a>
+      </div>
+      <div class="mid-head">
+        <a class="head-guide" href="#tag-slider">Genres</a>
+        <a class="head-guide" href="#trend">Trending</a>
+        <a class="head-guide" href="#game-header">Games</a>
+      </div>
+      <div class="right-head">
+        <button class="join-button show-popup">
+          Join for free
+        </button>
+      </div>
+    </div>
+
+    <div class="sign-up-js pop-up">  <!--Sign up-->
+      <i class="fa-solid fa-xmark fa-xl close-button"></i>
+      <div class="form">
+        <h1>Unlock indie gems now!</h1>
+        <div class="form-element">
+          <label for="new-email">Email</label>
+          <input type="text" id="new-email" placeholder="Enter email">
+        </div>
+        <div class="form-element">
+          <label for="new-password">Set password</label>
+          <input type="password" id="new-password" placeholder="Enter password">
+        </div>
+        <div class="form-element">
+          <a href="BitArcade.html">
+            <button class="signup-button">Sign up</button>
+          </a>
+        </div>
+        <div class="form-element">
+          <div class="sign-in">Already have an account&#63; <span>Sign in</span></div>
+        </div>
+        <div class="form-element">
+          <button class="other-option"><i class="fa-brands fa-google fa-xl" style="color: #161718;"></i><span>Sign up with Google</span></button>
+        </div>
+        <div class="form-element">
+          <button class="other-option"><i class="fa-brands fa-steam fa-xl" style="color: #2d2f34;"></i><span>Sign up with Steam</span></button>
+        </div>
+      </div>
+      <img src="Images/Sign-up-image.jpg">
+    </div>
+
+    <div class="sign-in-js pop-up">  <!--Sign in-->
+      <i class="fa-solid fa-xmark fa-xl close-button"></i>
+      <div class="form">
+        <h1>Unlock indie gems now!</h1>
+        <div class="form-element">
+          <label for="old-email">Email</label>
+          <input type="text" id="old-email" placeholder="Enter email">
+        </div>
+        <div class="form-element">
+          <label for="old-password">Password</label>
+          <input type="password" id="old-password" placeholder="Enter password">
+        </div>
+        <div class="form-element">
+          <a href="BitArcade.html">
+            <button class="signup-button">Sign in</button>
+          </a>
+        </div>
+        <div class="form-element">
+          <div class="sign-up">New user&#63; <span>Sign up</span></div>
+        </div>
+        <div class="form-element">
+          <button class="other-option"><i class="fa-brands fa-google fa-xl" style="color: #161718;"></i><span>Sign in with Google</span></button>
+        </div>
+        <div class="form-element">
+          <button class="other-option"><i class="fa-brands fa-steam fa-xl" style="color: #2d2f34;"></i><span>Sign in with Steam</span></button>
+        </div>
+      </div>
+      <img src="Images/Sign-in-image.jpg">
+    </div>
+
+    <div class="description">
+      <p class="one-liner">
+        Your go-to for all retro and indie pixel games.
+      </p>
+      <p class="sub-liner">
+        Your guide to nostalgia, reviews, and indie discoveries!
+      </p>
+      <button class="pixel-button join-button now-button show-popup">Join now</button>
+      <a href="BitArcade.html">
+        <button class="pixel-button discover-button">
+          <span>Discover </span>
+        </button>
+      </a>
+    </div>
+
+    <div id="tag-slider" class="tag-slider">
+      <div class="tag-slide-show">
+      </div>
+    </div>
+
+    <div class="trend-section">
+      <p id="trend" class="trend">Trending</p>
+      <div class="trend-container"></div>
+    </div>
+
+    <div class="game-section">
+      <div id="game-header" class="game-header">Other Games</div>
+      <div class="game-container"></div>
+      <div class="explore-button">
+        <button>Explore More</button>
+      </div>
+    </div>
+
+    <div class="dive-section">
+      <div class="top">Ready to dive deeper?</div>
+      <div class="bottom">Explore our growing collection of indie masterpieces and retro classics.</div>
+      <button class="pixel-button join-button now-button show-popup">Join now</button>
+    </div>
+
+    <div class="footer">
+      <div class="left-foot">
+        <a href="main.html" class="foot-title"><span class="bit">Bit</span><span class="arcade">Arcade</span></a>
+      </div>
+      <div class="middle-foot">
+        <a class="foot-guide" href="#tag-slider">Genres</a>
+        <a class="foot-guide" href="#trend">Trending</a>
+        <a class="foot-guide" href="#game-header">Games</a>
+      </div>
+      <div class="right-foot">
+        <i class="fa-brands fa-instagram fa-xl"></i>
+        <i class="fa-brands fa-twitter fa-xl"></i>
+        <i class="fa-brands fa-facebook fa-xl"></i>
+        <i class="fa-brands fa-steam fa-xl"></i>
+      </div>
+    </div>
+
+    <script src="scripts/main.js"  type="module"></script>
+  </body>
+</html>

@@ -1,0 +1,92 @@
+.trend-container{
+  width: 100%;
+  height: 600px;
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  border-radius: 20px;
+  margin-bottom: 10%;
+}
+.trend-game{
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  user-select: none;
+  animation: trend-slide 8s infinite ease-in-out;
+}
+.trend-game::before{
+  content: "";
+  position: absolute;
+  background: linear-gradient(transparent, black);
+  width: 100%;
+  bottom: 0;
+  height: 350px;
+}
+@keyframes trend-slide {
+  0%{left: 0%}
+  20%{left: 0%}
+  30%{left: -100%}
+  50%{left: -100%}
+  60%{left: -200%}
+  80%{left: -200%}
+  90%{left: -100%}
+  100%{left: 0%}
+}
+.game-background{
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 15px;
+}
+.trend-no{
+  font-family: "Pixelify Sans", sans-serif;
+  position: absolute;
+  left:2%;
+  top: 4%;
+  color: #dbd3ca;
+  font-size: 45px;
+  background-color: rgb(41, 38, 38);
+  width: 100px;
+  height: 100px;
+  border-radius: 2000px;
+}
+.trend-no span{
+  position: absolute;
+  transform: translate(40%,40%);
+}
+.game-icon{
+  position: absolute;
+  left: 2%;
+  bottom: 10%;
+  width: 75px;
+  border-radius: 200px;
+  cursor: pointer;
+}
+.game-name{
+  position: absolute;
+  color: #fff4e7;
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 25px;
+  font-weight: 600;
+  left: 10%;
+  bottom: 16%;
+  cursor: pointer;
+  text-decoration: none;
+}
+.game-tags{
+  position: absolute;
+  display: flex;
+  left: 10%;
+  bottom: 10%;
+  column-gap: 12px;
+  pointer-events: none;
+}
+.game-tags div{
+  border: 1px #fff4e7 solid;
+  padding: 8px 12px;
+  border-radius: 20px;
+  color: #fff4e7;
+  font-size: 13px;
+  opacity: 0.7;
+}

@@ -1,0 +1,142 @@
+.backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  z-index: 999;
+  display: none;
+}
+.pop-up{
+  position: fixed;
+  left: 50%;
+  top: -150%;
+  opacity: 0;
+  transform: translate(-50%,-50%) scale(1);
+  background-color: #f6fffe;
+  width: 1150px;
+  height: 600px;
+  box-shadow: 0px 12px 22px 5px rgba(0,0,0,0.1);
+  border-radius: 30px;
+  padding-top: 50px;
+  padding-left: 50px;
+  display: flex;
+  flex-direction: row;
+  z-index: 1000;
+  transition: top 0ms ease-in-out 200ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms; 
+}
+.pop-up.active{
+  top: 50%;
+  opacity: 1;
+  transform: translate(-50%,-50%) scale(1);
+  transition: top 0ms ease-in-out 0ms,
+              opacity 200ms ease-in-out 0ms,
+              transform 200ms ease-in-out 0ms; 
+}
+.pop-up .form{
+  width: 350px;
+  margin-right: 45px;
+  margin-top: 13px;
+}
+.pop-up .close-button{
+  position: absolute;
+  top: 5%;
+  right: 2.5%;
+  cursor: pointer;
+}
+.pop-up .form h1{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 25px;
+  margin-right: 15px;
+  margin-bottom: 25px;
+  letter-spacing: -1px;
+  cursor: default;
+}
+.pop-up .form .form-element{
+  margin: 20px 0px;
+}
+.pop-up .form .form-element label{
+  font-size: 15px;
+  font-weight: 600;
+}
+.pop-up .form .form-element input[type="text"],
+.pop-up .form .form-element input[type="password"]{
+  display: block;
+  margin-top: 5px;
+  width: 100%;
+  padding: 13px 20px;
+  outline: none;
+  border: 2px solid rgba(0, 0, 0, 0.17);
+  border-radius: 999px;
+  font-size: 15px;
+  background-color: transparent;
+}
+.pop-up .form .form-element input[type="text"]::placeholder,
+.pop-up .form .form-element input[type="password"]::placeholder{
+  opacity: 0.5;
+}
+.pop-up .form .form-element .signup-button{
+  width: 100%;
+  padding: 15px;
+  border-radius: 999px;
+  border: none;
+  background-color: rgb(27, 30, 33);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.pop-up .form .form-element .signup-button:hover{
+  opacity: 0.8;
+}
+.pop-up .form .form-element .signup-button:active{
+  opacity: 1;
+  background-color: rgb(19, 20, 20);
+}
+.pop-up .form .form-element .sign-in{
+  color: black;
+  font-size: 15px;
+  margin-left: 18%;
+  cursor: pointer;
+}
+.pop-up .form .form-element .sign-up{
+  color: black;
+  font-size: 15px;
+  margin-left: 32%;
+  cursor: pointer;
+}
+.pop-up .form .form-element div span{
+  text-decoration: underline;
+  font-weight: bold;
+}
+.pop-up .form .form-element .other-option{
+  position: relative;
+  padding: 13px 0;
+  width: 100%;
+  border-radius: 999px;
+  border: 2px solid rgba(0, 0, 0, 0.171);
+  background-color: transparent;
+  margin-bottom: -15px;
+  margin-top: 10px;
+  cursor: pointer;
+}
+.pop-up .form .form-element .other-option .fa-brands{
+  position: absolute;
+  left: 6%;
+  top: 50%;
+}
+.pop-up .form .form-element .other-option span{
+  font-size: 15px;
+  font-family: "Plus Jakarta Sans", sans-serif;
+  font-weight: 600;
+}
+.pop-up img{
+  width: 650px;
+  height: 470px;
+  object-fit: cover;
+  margin-top: 20px;
+  border-radius:38px;
+}

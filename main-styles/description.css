@@ -1,0 +1,41 @@
+.description{
+  margin-top: 10%;
+  margin-bottom: 10%;
+}
+.one-liner{
+  font-family: "IBM Plex Mono", monospace;
+  font-size: 52px;
+  width: 800px;
+  text-align: left;
+  font-weight: bolder;
+  line-height: 70px;
+  color: #392F5A;
+  letter-spacing: -2 px;
+  word-spacing: -1.5px;
+  margin-bottom: 1.2%;
+}
+.sub-liner{
+  font-size: 19px;
+  font-weight: 500;
+  letter-spacing: 0.3px;
+  margin-bottom: 2%;
+}
+.now-button,.discover-button{
+  margin: 1.5% 10px 0 0;
+  transition: all 0.25s;
+  padding: 12px 36px;
+}
+.discover-button{
+  background-color: #f47e09;
+  border-color: #b97735;
+  color: #fff;
+}
+.discover-button:hover{
+  box-shadow: 0px 7px 0px #795129;
+  transform: translate(0px,-7px);
+}
+.discover-button:active{
+  box-shadow: 0px 0px 0px #795129,inset 0 2px 0 #b97735;
+  transform: translate(0px,0px);
+  color: #eabd90;
+}

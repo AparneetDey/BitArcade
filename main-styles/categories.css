@@ -1,0 +1,30 @@
+.tag-slider{
+  display: flex;
+  white-space: nowrap;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 10%;
+}
+.tag-slide-show{
+  display: flex;
+  animation: 25s slide infinite linear;
+}
+.categories{
+  margin-right: 35px;
+  font-family: "Pixelify Sans", sans-serif;
+  font-weight: 500;
+  padding: 8px 14px;
+  background-color: #ffcd45;
+  border: 2.5px #d7b34d solid;
+  border-radius: 12px;
+  box-shadow: inset 0px 3px 0 #ffe7a5;
+  cursor: default;
+}
+@keyframes slide {
+  from{
+    transform: translateX(0%);
+  }
+  to{
+    transform: translateX(-100%);
+  }
+}
