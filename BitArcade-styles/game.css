@@ -3,6 +3,9 @@
     white-space: nowrap;
     overflow: hidden;
 }
+.game-container{
+    width: 86%;
+}
 .Games{
     width: 100%;
     height: 270px;
@@ -14,15 +17,13 @@
     gap: 18px;
 }
 .item{
-    width: 400px;
-    height: 250px;
+    flex: 1 0 calc(36% - 36px);
     border: 5px solid #3d605c;
     border-radius: 20px;
     transition: all 0.25s;
     position: relative;
     cursor: pointer;
     user-select: none;
-    flex-shrink: 0;
 }
 .item:hover{
     box-shadow: 7px 7px 0 #233734;
@@ -71,9 +72,20 @@
 
 .popularGames{
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+    flex-wrap: wrap;
     gap: 18px;
+}
+.popularItem{
+    flex: 1 1 calc(33.33% - 36px);
+    min-width: calc(10% - 36px);
+    max-width: calc(100% - 36px);
+    border: 5px solid #3d605c;
+    border-radius: 20px;
+    transition: all 0.25s;
+    position: relative;
+    cursor: pointer;
+    user-select: none;
 }
 
 .explore-button{
@@ -96,9 +108,4 @@
     box-shadow: 0px 0px 0px #172422,inset 0 2px 0 #283e3b;
     transform: translate(0px,0px);
     color: #4e7a75;
-}
-
-.popularItem{
-    width: 425px;
-    height: 275px;
 }

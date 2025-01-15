@@ -29,6 +29,7 @@
     width: 85%;
     align-items: center;
     position: absolute;
+    user-select: none;
 }
 .realms{
     font-family: "Pixelify Sans", sans-serif;
