@@ -9,9 +9,13 @@ html{
   padding: 0;
 }
 body{
-  margin: 0;
+  margin: 2% 0;
   font-family: "Plus Jakarta Sans", sans-serif;
   background-color: #fadfc4;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 90px;
 }
 body::-webkit-scrollbar {
   display: none; /* Chrome, Safari and Opera */
@@ -31,6 +35,6 @@ button{
   font-weight: 600;
   color: #392F5A;
 }
-.header,.description,.tag-slider,.trend-section,.game-section,.footer{
-  margin: 0 7%;
+.header, .description, .tag-slider, .trend-section, .game-section, .footer{
+  width: 86%;
 }
