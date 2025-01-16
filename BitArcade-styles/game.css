@@ -68,6 +68,10 @@
     color: white;
     opacity: 0;
     transition: all 0.3s ease-in-out;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    width: 90%;
 }
 
 .popularGames{
