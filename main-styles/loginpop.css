@@ -99,13 +99,15 @@
 .pop-up .form .form-element .sign-in{
   color: black;
   font-size: 15px;
-  margin-left: 18%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .pop-up .form .form-element .sign-up{
   color: black;
   font-size: 15px;
-  margin-left: 32%;
+  display: flex;
+  justify-content: center;
   cursor: pointer;
 }
 .pop-up .form .form-element div span{
