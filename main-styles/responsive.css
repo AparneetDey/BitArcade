@@ -286,7 +286,7 @@
     }
     
     .game {
-        min-width: 170px;
+        min-width: 250px;
         max-width: auto;
         border-radius: 7px;
         border: 3px solid #3d605c;
@@ -306,7 +306,7 @@
     }
 
     .head-title {
-        font-size: 25px;
+        font-size: 30px;
     }
 
     .trend,
@@ -337,6 +337,10 @@
         padding: 9px 24px;
     }
 
+    .game-container{
+        margin-bottom: 15%;
+    }
+
     .one-liner {
         width: 350px;
         font-size: 23px;
@@ -347,7 +351,7 @@
 
     .sub-liner {
         margin-bottom: 5%;
-        font-size: 11px;
+        font-size: 9px;
     }
 
     .top {
@@ -367,7 +371,7 @@
 
     .header {
         border-radius: 7px;
-        height: 60px;
+        height: 70px;
     }
 
     .game-name {
