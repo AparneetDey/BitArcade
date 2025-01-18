@@ -38,9 +38,16 @@ export const gamesCart=[
 ]
 
 //Game section
-export function gameSection(){
-  let innerGame = ''
-  gamesCart.forEach((game) => {
+function gameSection(){
+  let innerGame = '';
+  const screenSize = window.innerWidth;
+  let itemsTOShow = 9;
+
+  if(screenSize <= 1200){
+    itemsTOShow = 8
+  }
+
+  gamesCart.slice(0,itemsTOShow).forEach((game) => {
     innerGame += `
     <div class="game">
       <img src=${game.gameImg}>
@@ -52,3 +59,7 @@ export function gameSection(){
   document.querySelector('.game-container').innerHTML = innerGame;
 }
 
+export function updateGameSectionOnResize(){
+  gameSection();
+  window.addEventListener('resize', gameSection);
+}

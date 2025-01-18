@@ -1,6 +1,6 @@
 import { genreSlider } from "../main-carts/categories-cart.js";
 import { trendSection } from "../main-carts/trend-cart.js";
-import { gameSection } from "../main-carts/games-cart.js";
+import { updateGameSectionOnResize } from "../main-carts/games-cart.js";
 
 genreSlider();
 let copy = document.querySelector(".tag-slide-show").cloneNode(true);
@@ -8,7 +8,7 @@ document.querySelector(".tag-slider").appendChild(copy);
 
 trendSection();
 
-gameSection();
+updateGameSectionOnResize();
 
 const signUp = document.querySelector(".sign-up-js");
 const signIn = document.querySelector(".sign-in-js");
