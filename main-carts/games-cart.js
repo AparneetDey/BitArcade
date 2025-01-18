@@ -38,7 +38,7 @@ export const gamesCart=[
 ]
 
 //Game section
-function gameSection(){
+export function gameSection(){
   let innerGame = '';
   const screenSize = window.innerWidth;
   let itemsTOShow = 9;
@@ -57,9 +57,4 @@ function gameSection(){
   });
 
   document.querySelector('.game-container').innerHTML = innerGame;
-}
-
-export function updateGameSectionOnResize(){
-  gameSection();
-  window.addEventListener('resize', gameSection);
 }

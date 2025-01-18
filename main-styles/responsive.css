@@ -1,4 +1,14 @@
 @media only screen and (max-width: 1200px) {
+
+    .header,
+    .description,
+    .tag-slider,
+    .trend-section,
+    .game-section,
+    .footer {
+        width: 95%;
+    }
+
     .pop-up {
         width: 800px;
         height: 750px;
@@ -9,33 +19,350 @@
     }
 
     .pop-up img {
-        width: 500px;
-        height: 200px;
+        width: 70%;
+        height: 30%;
     }
 
     .pop-up .form {
         margin-right: 0;
-        width: 550px;
+        width: 70%;
         margin-bottom: 40px;
     }
+
     .trend-container {
         height: auto;
     }
+
     .trend-game {
         height: auto;
         flex: 0 0 100%;
         min-width: 100%;
     }
-    .game-name{
+
+    .game-name {
         left: 14%;
         bottom: 17%;
     }
-    .game-tags{
+
+    .game-tags {
         left: 14%;
         bottom: 10%;
     }
-    .game{
+
+    .game {
         min-width: 350px;
         max-width: auto;
+    }
+}
+
+@media only screen and (max-width: 920px) {
+
+    .mid-head,
+    .middle-foot {
+        display: none;
+    }
+
+    .now-button,
+    .discover-button {
+        display: block;
+    }
+
+    .one-liner {
+        width: 700px;
+        font-size: 40px;
+        line-height: 60px;
+        word-spacing: -3px;
+    }
+
+    .sub-liner {
+        font-size: 15px;
+        margin-bottom: 3%;
+    }
+
+    .game-name {
+        left: 17%;
+        bottom: 18%;
+    }
+
+    .game-tags {
+        left: 17%;
+        bottom: 10%;
+    }
+
+    .trend-no {
+        left: 4%;
+    }
+
+    .game-icon {
+        left: 5%;
+    }
+
+    .top {
+        font-size: 50px;
+        line-height: 60px;
+        margin-bottom: 30px;
+    }
+
+    .bottom {
+        font-size: 17px;
+        margin-bottom: 3%;
+    }
+
+    .join-button {
+        box-shadow: 0px 7px 0px #3c385c;
+        transform: translate(0px, -7px);
+    }
+
+    .discover-button {
+        box-shadow: 0px 7px 0px #795129;
+        transform: translate(0px, -7px);
+        margin-top: 15px;
+    }
+
+    .explore-button button {
+        box-shadow: 0px 7px 0px #172422;
+        transform: translate(0px, -7px);
+    }
+
+    .game:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .game:active {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .game::before {
+        opacity: 1;
+    }
+
+    .game div {
+        opacity: 1;
+    }
+
+    .game {
+        min-width: 280px;
+        max-width: auto;
+    }
+
+    .pop-up {
+        width: 600px;
+    }
+}
+
+@media only screen and (max-width: 720px) {
+    .game {
+        min-width: 220px;
+        max-width: auto;
+        border-radius: 15px;
+    }
+    .game::before{
+        border-radius: 15px;
+    }
+    .game img{
+        border-radius: 10px;
+    }
+
+    .head-title {
+        font-size: 30px;
+    }
+    .foot-title{
+        font-size: 23px;
+    }
+
+    button {
+        font-size: 16px;
+        border-radius: 8px;
+    }
+
+    .join-button {
+        padding: 6px 12px;
+    }
+
+    .now-button,
+    .discover-button {
+        padding: 8px 32px;
+    }
+
+    .explore-button button{
+        padding: 11px 26px;
+    }
+
+    .one-liner {
+        width: 500px;
+        font-size: 35px;
+        line-height: 55px;
+        word-spacing: -5px;
+        letter-spacing: 0;
+    }
+
+    .sub-liner {
+        margin-bottom: 4%;
+    }
+
+    .pop-up {
+        width: 400px;
+    }
+
+    .dive-section {
+        height: 400px;
+    }
+
+    .top {
+        font-size: 40px;
+        line-height: 50px;
+        margin-bottom: 20px;
+    }
+
+    .bottom {
+        font-size: 14px;
+        margin-bottom: 3%;
+    }
+
+    .game-name {
+        left: 18%;
+        bottom: 20%;
+        font-size: 20px;
+    }
+
+    .game-tags {
+        left: 18%;
+        bottom: 10%;
+    }
+    .game-tags div{
+        font-size: 11px;
+    }
+
+    .trend-no {
+        left: 4%;
+        font-size: 47px;
+        width: 75px;
+        height: 75px;
+    }
+
+    .trend-no span {
+        position: absolute;
+        transform: translate(15%, 12%);
+    }
+
+    .game-icon {
+        left: 5%;
+        width: 60px;
+    }
+    .game div {
+        opacity: 1;
+        font-size: 19px;
+    }
+    .header{
+        border-radius: 10px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .header,
+    .description,
+    .tag-slider,
+    .trend-section,
+    .game-section,
+    .footer {
+        width: 98%;
+    }
+    .game {
+        min-width: 180px;
+        max-width: auto;
+        border-radius: 10px;
+    }
+    .game::before{
+        border-radius: 5px;
+    }
+    .game img{
+        border-radius: 5px;
+    }
+
+    .head-title {
+        font-size: 25px;
+    }
+    .foot-title{
+        font-size: 23px;
+    }
+
+    button {
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .join-button {
+        margin-top: 3px;
+        padding: 4px 10px;
+    }
+
+    .now-button,
+    .discover-button {
+        padding: 6px 30px;
+    }
+
+    .explore-button button{
+        padding: 9px 24px;
+    }
+    .one-liner {
+        width: 350px;
+        font-size: 25px;
+        line-height: 35px;
+        word-spacing: -6px;
+        letter-spacing: 0;
+    }
+
+    .sub-liner {
+        margin-bottom: 5%;
+        font-size: 13px;
+    }
+    .top {
+        font-size: 30px;
+        line-height: 20px;
+        margin-bottom: 20px;
+    }
+
+    .bottom {
+        font-size: 12px;
+        margin-bottom: 5%;
+    }
+    .dive-section {
+        height: 300px;
+    }
+    .header{
+        border-radius: 7px;
+    }
+
+    .game-name {
+        left: 20%;
+        bottom: 20%;
+        font-size: 17px;
+    }
+
+    .game-tags {
+        left: 20%;
+        bottom: 10%;
+    }
+    .game-tags div{
+        font-size: 10px;
+    }
+
+    .trend-no {
+        left: 4%;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .trend-no span {
+        position: absolute;
+        transform: translate(15%, 18%);
+    }
+
+    .game-icon {
+        left: 5%;
+        width: 50px;
     }
 }

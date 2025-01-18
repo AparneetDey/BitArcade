@@ -1,6 +1,6 @@
 import { genreSlider } from "../main-carts/categories-cart.js";
 import { trendSection } from "../main-carts/trend-cart.js";
-import { updateGameSectionOnResize } from "../main-carts/games-cart.js";
+import { gameSection } from "../main-carts/games-cart.js";
 
 genreSlider();
 let copy = document.querySelector(".tag-slide-show").cloneNode(true);
@@ -8,7 +8,30 @@ document.querySelector(".tag-slider").appendChild(copy);
 
 trendSection();
 
-updateGameSectionOnResize();
+function iconsUpdate(){
+  let iconsCart = document.querySelectorAll(".right-foot i");
+  const screenSize = window.innerWidth;
+
+  iconsCart.forEach((item)=>{
+    if(screenSize <= 720){
+      item.classList.remove('fa-xl');
+      item.classList.add('fa-l');
+    }
+    else{
+      item.classList.remove('fa-l');
+      item.classList.add('fa-xl');
+    }
+  })
+}
+
+function updateOnResize(){
+  gameSection();
+  iconsUpdate();
+  window.addEventListener('resize', gameSection);
+  window.addEventListener('resize', iconsUpdate);
+}
+
+updateOnResize();
 
 const signUp = document.querySelector(".sign-up-js");
 const signIn = document.querySelector(".sign-in-js");
