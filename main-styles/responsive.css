@@ -274,6 +274,17 @@
 }
 
 @media only screen and (max-width: 550px) {
+    .pop-up{
+        height: 650px;
+        padding-bottom: 10px;
+    }
+
+    .pop-up .form h1{
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 20px;
+    }
+    
     .game {
         min-width: 170px;
         max-width: auto;
