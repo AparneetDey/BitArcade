@@ -6,10 +6,10 @@
 }
 .tag-slide-show{
   display: flex;
+  gap: 35px;
   animation: 25s slide infinite linear;
 }
 .categories{
-  margin-right: 35px;
   font-family: "Pixelify Sans", sans-serif;
   font-weight: 500;
   padding: 8px 14px;

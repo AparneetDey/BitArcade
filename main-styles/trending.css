@@ -80,6 +80,7 @@
 .game-tags{
   position: absolute;
   display: flex;
+  align-items: center;
   left: 12%;
   bottom: 9%;
   column-gap: 12px;

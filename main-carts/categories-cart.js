@@ -18,6 +18,11 @@ export function genreSlider(){
     <div class="categories">${tag}</div>
     `;
   });
+  categoryCart.forEach((tag) => {
+    innerTag += `
+    <div class="categories">${tag}</div>
+    `;
+  });
 
   document.querySelector('.tag-slide-show').innerHTML = innerTag;
 

@@ -36,7 +36,7 @@ export function trendSection(){
   let innerTrend = '';
   trendCart.forEach((trend) => {
     innerTrend +=`
-    <div class="trend-game">
+    <div class="trend-game swiper-slide">
       <img class="game-background" src=${trend.gameImg}>
       <div class="trend-no"><span>&#35;${trend.trendNo}</span></div>
       <img class="game-icon" src=${trend.gameIcon}>

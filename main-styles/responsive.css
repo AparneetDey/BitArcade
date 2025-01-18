@@ -381,10 +381,14 @@
         min-width: 170px;
         max-width: auto;
         border-radius: 7px;
+        border: 3px solid #3d605c;
     }
 
     .game::before {
         border-radius: 2px;
+    }
+    .trend-game::before{
+        height: 200px;
     }
 
     .game img {
@@ -430,6 +434,13 @@
 
     .game-tags div {
         font-size: 7px;
+        padding: 6px 10px;
+    }
+    .categories{
+        font-size: 11px;
+        padding: 6px 12px;
+        border-radius: 10px;
+        border: 2px #d7b34d solid;
     }
 }
 
