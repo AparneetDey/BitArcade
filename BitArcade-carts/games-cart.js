@@ -40,21 +40,29 @@ const newIndie = [
     imageUrl: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1416050/capsule_616x353.jpg?t=1723577948"
   },
   {
+    gameImg: "https://threeheadedblog.wordpress.com/wp-content/uploads/2012/07/super-meat-boy.jpg",
+    gameName: "Super Meat Boy"
+  },
+  {
+    gameImg: "https://static1.thegamerimages.com/wordpress/wp-content/uploads/2021/07/bastion.jpg",
+    gameName: "Bastion"
+  },
+  {
+    gameImg: "https://techcrunch.com/wp-content/uploads/2022/09/oxenfree-netflix.png?resize=1200,672",
+    gameName: "Oxenfree"
+  },
+  {
+    gameImg: "https://indigomusic.com/wp-content/uploads/2024/02/Limbo-cover-image-1024x576.png",
+    gameName: "Limbo"
+  },
+  {
+    gameImg: "https://cdn2.unrealengine.com/ar758-3840x2160-64466f984bef.png",
+    gameName: "Risk of Rain 2"
+  },
+  {
     gameImg: "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2013/11/20/1331621160494_2/hyper-light-drifter-retro-is-back",
     gameName: "Hyper Light Drifter"
   },
-  {
-    gameImg: "https://assetsio.gnwcdn.com/Katana-Zero-Header-02.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
-    gameName: "Katana ZERO"
-  },
-  {
-    gameImg: "https://images.alphacoders.com/619/619381.jpg",
-    gameName: "Axiom Verge"
-  },
-  {
-    gameImg: "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13621373/ss_631d99cc6462cce94081032b7e600a6b87c3f7d3.jpg?quality=90&strip=all&crop=0,3.4613147178592,100,93.077370564282",
-    gameName: "Gris"
-  }
 ];
 
 const recommendedGames = [
