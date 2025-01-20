@@ -11,6 +11,7 @@ screenResizing();
 
 function screenResizing(){
   tagGenerator();
+  // tagClicked();
   gamesHtml();
   window.addEventListener('resize',tagGenerator);
   window.addEventListener('resize',gamesHtml);
@@ -36,9 +37,7 @@ function screenResizing(){
     }
   })
 }
-
-tagClicked();
-
+// tagClicked();
 
 document.querySelector(".clear-button").addEventListener("click", () =>{
   let input = document.getElementById("search-section");

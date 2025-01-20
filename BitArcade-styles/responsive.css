@@ -184,6 +184,9 @@
         border-radius: 10px;
         border: 2px #d7b34d solid;
     }
+    .clicked{
+        border: 2px #3f5554 solid;
+    }
 }
 
 @media only screen and (max-width: 550px){

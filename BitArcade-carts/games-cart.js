@@ -38,6 +38,22 @@ const newIndie = [
   {
     name: "Shovel Knight Dig",
     imageUrl: "https://shared.fastly.steamstatic.com/store_item_assets/steam/apps/1416050/capsule_616x353.jpg?t=1723577948"
+  },
+  {
+    gameImg: "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2013/11/20/1331621160494_2/hyper-light-drifter-retro-is-back",
+    gameName: "Hyper Light Drifter"
+  },
+  {
+    gameImg: "https://assetsio.gnwcdn.com/Katana-Zero-Header-02.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+    gameName: "Katana ZERO"
+  },
+  {
+    gameImg: "https://images.alphacoders.com/619/619381.jpg",
+    gameName: "Axiom Verge"
+  },
+  {
+    gameImg: "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13621373/ss_631d99cc6462cce94081032b7e600a6b87c3f7d3.jpg?quality=90&strip=all&crop=0,3.4613147178592,100,93.077370564282",
+    gameName: "Gris"
   }
 ];
 
@@ -97,6 +113,50 @@ const recommendedGames = [
   {
     gameImg: "https://assets.altarofgaming.com/wp-content/uploads/2022/10/braid-game-cover-altar-of-gaming.jpg",
     gameName: "Braid",
+  },
+  {
+    gameImg: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000003208/4643fb058642335c523910f3a7910575f56372f612f7c0c9a497aaae978d3e51",
+    gameName: "Hollow Knight"
+  },
+  {
+    gameImg: "https://image.api.playstation.com/cdn/EP2120/CUSA11235_00/QIi3jKznLkAGV7iXnMhVMOw1F9tROkIC.jpg",
+    gameName: "Celeste"
+  },
+  {
+    gameImg: "https://shared.cloudflare.steamstatic.com/store_item_assets/steam/apps/413150/capsule_616x353.jpg?t=1711128146",
+    gameName: "Stardew Valley"
+  },
+  {
+    gameImg: "https://store-images.s-microsoft.com/image/apps.23383.14093828725404571.e8c4fd85-da7e-4c33-9a85-c97c9f3eeb38.d4808fda-8607-464f-91cf-a9228cda620e",
+    gameName: "Hades"
+  },
+  {
+    gameImg: "https://assets1.ignimgs.com/thumbs/userUploaded/2018/8/2/img3281-1533234001155.jpg",
+    gameName: "Dead Cells"
+  },
+  {
+    gameImg: "https://assetsio.gnwcdn.com/-1576662110318.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+    gameName: "Slay the Spire"
+  },
+  {
+    gameImg: "https://assets.nintendo.com/image/upload/c_fill,w_1200/q_auto:best/f_auto/dpr_2.0/ncom/software/switch/70010000016330/d94d2186ef03c930392253c83c84af0c73b7e57cd902a526b09b4155a25930fe",
+    gameName: "Cuphead"
+  },
+  {
+    gameImg: "https://img.redbull.com/images/c_limit,w_1500,h_1000/f_auto,q_auto/redbullcom/2013/11/20/1331621160494_2/hyper-light-drifter-retro-is-back",
+    gameName: "Hyper Light Drifter"
+  },
+  {
+    gameImg: "https://assetsio.gnwcdn.com/Katana-Zero-Header-02.jpg?width=1600&height=900&fit=crop&quality=100&format=png&enable=upscale&auto=webp",
+    gameName: "Katana ZERO"
+  },
+  {
+    gameImg: "https://images.alphacoders.com/619/619381.jpg",
+    gameName: "Axiom Verge"
+  },
+  {
+    gameImg: "https://platform.polygon.com/wp-content/uploads/sites/2/chorus/uploads/chorus_asset/file/13621373/ss_631d99cc6462cce94081032b7e600a6b87c3f7d3.jpg?quality=90&strip=all&crop=0,3.4613147178592,100,93.077370564282",
+    gameName: "Gris"
   }
 ];
 
@@ -254,13 +314,16 @@ export function gameScroll() {
 
     breakpoints: {
       0: {
-        slidesPerView: 1
+        slidesPerView: 1,
+        loop: true
       },
-      620: {
-        slidesPerView: 2
+      550: {
+        slidesPerView: 2,
+        loop: true
       },
-      1024: {
-        slidesPerView: 3
+      1200: {
+        slidesPerView: 3,
+        loop: true
       }
     }
   });

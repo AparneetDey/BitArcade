@@ -31,7 +31,10 @@ export function tagGenerator(){
     const screenWidth = window.innerWidth;
     let numOfTags = 25;
 
-    if(screenWidth <= 1200 && screenWidth > 920){
+    if(screenWidth > 1200){
+        numOfTags = 25;
+    }
+    else if(screenWidth <= 1200 && screenWidth > 920){
         numOfTags = 20;
     }
     else if(screenWidth <= 920 && screenWidth > 720){
@@ -53,6 +56,9 @@ export function tagGenerator(){
         `;
     });
     document.querySelector(".tags").innerHTML = innerTag;
+
+  tagClicked();
+
 }
 
 export function tagClicked(){
@@ -63,6 +69,7 @@ export function tagClicked(){
         tag.addEventListener('click',()=>{
             if(!clicked){
                 clicked = true;
+                console.log("clicked");
                 tag.classList.add('clicked');
             }
             else{
