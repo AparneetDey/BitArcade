@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  max-width: 100%;
 }
 html{
   scroll-behavior: smooth;
@@ -33,5 +34,14 @@ button{
   font-size: 33px;
   font-weight: 600;
   color: #392F5A;
-  margin-bottom: 15px;
+  margin-bottom: 3%;
+}
+
+.header,
+.trend-container,
+.genre,
+.Game-container,
+.game-container,
+.footer{
+  width: 86%;
 }

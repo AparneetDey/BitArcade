@@ -1,0 +1,294 @@
+@media only screen and (max-width: 1200px) {
+
+    .header,
+    .trend-container,
+    .genre,
+    .Game-container,
+    .game-container,
+    .footer {
+        width: 90%;
+    }
+
+    .pop-up {
+        width: 800px;
+        height: 750px;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        padding-left: 0px;
+    }
+
+    .pop-up img {
+        width: 70%;
+        height: 30%;
+    }
+
+    .pop-up .form {
+        margin-right: 0;
+        width: 70%;
+        margin-bottom: 40px;
+    }
+
+    .mid-head{
+        width: 400px;
+    }
+
+    .tag-container{
+        height: 370px;
+    }
+
+    .item {
+        flex: 1 1 calc(33.33% - 36px);
+        min-width: 400px;
+        max-width: auto;
+    }
+    .popularItem{
+        min-width: 280px;
+        max-width: auto;
+    }
+    .trend-no{
+        width: 80px;
+        height: 80px;
+    }
+    .trend-no span{
+        transform: translate(22%,20%);
+    }
+    .game .name,.game .tag{
+        left: 18%;
+    }
+}
+
+@media only screen and (max-width: 920px){
+    .pop-up {
+        width: 600px;
+    }
+    .middle-foot{
+        display: none;
+    }
+    .mid-head{
+        width: 230px;
+    }
+    .tag-container{
+        height: 390px;
+    }
+    .realms:hover{
+        transform: none;
+    }
+    .clicked:hover{
+        transform: none;
+    }
+    .item {
+        flex: 1 1 calc(33.33% - 36px);
+        min-width: 450px;
+        max-width: auto;
+    }
+    .popularItem{
+        min-width: 300px;
+        max-width: auto;
+    }
+    .item:hover {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .item:active {
+        box-shadow: none;
+        transform: none;
+    }
+
+    .item::before {
+        opacity: 1;
+    }
+
+    .item div {
+        opacity: 1;
+    }
+
+    .join-button {
+        box-shadow: 0px 7px 0px #3c385c;
+        transform: translate(0px, -7px);
+    }
+
+    .explore-button button {
+        box-shadow: 0px 7px 0px #172422;
+        transform: translate(0px, -7px);
+    }
+
+    .game .icon, .game .trend-no{
+        left:3.5%;
+    }
+    .game .name,.game .tag{
+        left: 24%;
+    }
+    .game .name{
+        bottom: 17%;
+    }
+    .trend-no{
+        width: 60px;
+        height: 60px;
+        font-size: 35px;
+    }
+    .trend-no span{
+        transform: translate(22%,20%);
+    }
+}
+
+@media only screen and (max-width: 720px){
+    .pop-up {
+        width: 400px;
+    }
+    .head-title {
+        font-size: 30px;
+    }
+    .Heading{
+        font-size: 25px;
+        margin-bottom: 5%;
+    }
+    .foot-title {
+        font-size: 23px;
+    }
+    button {
+        font-size: 16px;
+        border-radius: 8px;
+    }
+    .explore-button button {
+        padding: 11px 26px;
+    }
+    .header {
+        border-radius: 10px;
+        height: 75px;
+    }
+    .mid-head{
+        display: none;
+    }
+    .right-head{
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+    }
+    .item {
+        min-width: 380px;
+        max-width: auto;
+    }
+    .item div{
+        opacity: 19px;
+    }
+    .popularItem{
+        min-width: 250px;
+        max-width: auto;
+    }
+    .realms {
+        font-size: 11px;
+        padding: 6px 12px;
+        border-radius: 10px;
+        border: 2px #d7b34d solid;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    .pop-up{
+        height: 550px;
+        width: 400px;
+    }
+
+    .pop-up img{
+        display: none;
+    }
+
+    .pop-up .form h1{
+        margin-bottom: 0;
+        margin-right: 0;
+        font-size: 25px;
+    }
+
+    .trend{
+        height: 400px;
+    }
+
+    .trend-no {
+        left: 4%;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+    }
+
+    .trend-no span {
+        position: absolute;
+        transform: translate(15%, 18%);
+    }
+
+    .game .icon, .game .trend-no{
+        left:5%;
+    }
+    .game .name,.game .tag{
+        left: 26%;
+    }
+    .game .name{
+        bottom: 18%;
+        font-size: 15px;
+    }
+    .game .tag div{
+        font-size: 7px;
+        padding: 6px 10px;
+    }
+    .game .icon{
+        width: 50px;
+    }
+    .Games{
+        height: 170px;
+    }
+    .item {
+        min-width: 250px;
+        height: 150px;
+        max-width: auto;
+    }
+    .item div{
+        font-size: 13px;
+    }
+    .popularItem{
+        min-width: 250px;
+        height: auto;
+        max-width: auto;
+    }
+    button {
+        font-size: 14px;
+        border-radius: 6px;
+    }
+
+    .join-button {
+        margin-top: 10px;
+        padding: 4px 10px;
+    }
+
+    .explore-button button {
+        padding: 9px 24px;
+    }
+
+    .header {
+        border-radius: 7px;
+        height: 75px;
+    }
+    .head-title {
+        font-size: 25px;
+    }
+    .foot-title{
+        font-size: 18px;
+    }
+    .tag-container{
+        height: 420px;
+    }
+}
+
+@media only screen and (max-height: 800px) and (max-width: 550px){
+    .item {
+        min-width: 250px;
+        height: 150px;
+        max-width: auto;
+    }
+    .popularItem{
+        min-width: 250px;
+        height: auto;
+        max-width: auto;
+    }
+}

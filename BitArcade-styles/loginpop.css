@@ -50,7 +50,6 @@
 .pop-up .form h1{
   font-family: "IBM Plex Mono", monospace;
   font-size: 25px;
-  margin-right: 15px;
   margin-bottom: 25px;
   letter-spacing: -1px;
   cursor: default;
@@ -99,14 +98,17 @@
 .pop-up .form .form-element .sign-in{
   color: black;
   font-size: 15px;
-  margin-left: 18%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .pop-up .form .form-element .sign-up{
   color: black;
   font-size: 15px;
   margin-left: 32%;
   cursor: pointer;
+  display: flex;
+  justify-content: center;
 }
 .pop-up .form .form-element div span{
   text-decoration: underline;

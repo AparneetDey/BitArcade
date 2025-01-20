@@ -28,7 +28,26 @@ const indiePixelTags = [
 
 export function tagGenerator(){
     let innerTag = '';
-    indiePixelTags.forEach((item)=>{
+    const screenWidth = window.innerWidth;
+    let numOfTags = 25;
+
+    if(screenWidth <= 1200 && screenWidth > 920){
+        numOfTags = 20;
+    }
+    else if(screenWidth <= 920 && screenWidth > 720){
+        numOfTags = 15;
+    }
+    else if(screenWidth <= 720 && screenWidth > 550){
+        numOfTags = 20;
+    }
+    else if(screenWidth <=550 && screenWidth >350){
+        numOfTags = 15;
+    }
+    else{
+        numOfTags = 12;
+    }
+
+    indiePixelTags.slice(0,numOfTags).forEach((item)=>{
         innerTag += `
         <div class="realms">${item}</div>
         `;

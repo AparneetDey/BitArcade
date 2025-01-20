@@ -1,6 +1,5 @@
 .header{
   display: flex;
-  width: 86%;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -29,9 +28,9 @@
 }
 .mid-head{
   display: flex;
-  width: 400px;
-  justify-content: space-between;
+  width: 600px;
   position: relative;
+  align-items: center;
 }
 .mid-head .search-icon{
   position: absolute;

@@ -218,7 +218,17 @@ export function gamesHtml() {
 
   //HTML of popular games
   let innerPopularGames = '';
-  popularGames.forEach((game) => {
+  const screenWidth = window.innerWidth;
+  let numOfPopularGames = 21;
+
+  if(screenWidth <= 1200 && screenWidth > 550){
+    numOfPopularGames = 20;
+  }
+  else{
+    numOfPopularGames = 12;
+  }
+
+  popularGames.slice(0,numOfPopularGames).forEach((game) => {
     innerPopularGames += `
         <div class="item popularItem">
             <img src=${game.gameImg}>

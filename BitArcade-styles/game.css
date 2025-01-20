@@ -1,10 +1,6 @@
 .Game-container{
-    width: 86%;
     white-space: nowrap;
     overflow: hidden;
-}
-.game-container{
-    width: 86%;
 }
 .Games{
     width: 100%;
@@ -16,14 +12,26 @@
     padding-left: 6.5px;
     gap: 18px;
 }
+.popularGames{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
 .item{
-    flex: 1 0 calc(36% - 36px);
+    flex: 1 1 calc(33.33% - 36px);
+    min-width: 470px;
+    max-width: auto;
     border: 5px solid #3d605c;
     border-radius: 20px;
     transition: all 0.25s;
     position: relative;
     cursor: pointer;
     user-select: none;
+}
+.popularItem{
+    min-width: 350px;
+    max-width: auto;
 }
 .item:hover{
     box-shadow: 7px 7px 0 #233734;
@@ -72,24 +80,6 @@
     white-space: nowrap;
     overflow: hidden;
     width: 90%;
-}
-
-.popularGames{
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    gap: 18px;
-}
-.popularItem{
-    flex: 1 1 calc(33.33% - 36px);
-    min-width: calc(10% - 36px);
-    max-width: calc(100% - 36px);
-    border: 5px solid #3d605c;
-    border-radius: 20px;
-    transition: all 0.25s;
-    position: relative;
-    cursor: pointer;
-    user-select: none;
 }
 
 .explore-button{
