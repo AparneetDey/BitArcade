@@ -424,7 +424,7 @@
     }
 }
 
-@media only screen and (max-height: 750px) {
+@media only screen and (max-height: 800px) {
     .game {
         min-width: 200px;
         max-width: auto;
